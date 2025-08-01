@@ -1,0 +1,58 @@
+{
+    "nodes": [
+        {
+            "pos": {
+                "x": 10,
+                "y": 0,
+                "z": 10
+            },
+            "node_name": "병원",
+            "man_min_value": 0.0,
+            "man_max_value": 100.0,
+            "economy_min_value": 0.0,
+            "economy_max_value": 100.0
+        },
+        {
+            "pos": {
+                "x": -10,
+                "y": 0,
+                "z": -10
+            },
+            "node_name": "경찰서",
+            "man_min_value": 0.0,
+            "man_max_value": 100.0,
+            "economy_min_value": 0.0,
+            "economy_max_value": 100.0
+        },
+        {
+            "pos": {
+                "x": 10,
+                "y": 0,
+                "z": -10
+            },
+            "node_name": "소방서",
+            "man_min_value": 0.0,
+            "man_max_value": 100.0,
+            "economy_min_value": 0.0,
+            "economy_max_value": 100.0
+        },
+        {
+            "pos": {
+                "x": -10,
+                "y": 0,
+                "z": 10
+            },
+            "node_name": "우체국",
+            "man_min_value": 0.0,
+            "man_max_value": 100.0,
+            "economy_min_value": 0.0,
+            "economy_max_value": 100.0
+        }
+    ],
+    "edges": [
+        { "node1_num": 0, "node2_num": 3, "distance": 5 },
+        { "node1_num": 0, "node2_num": 2, "distance": 5 },
+        { "node1_num": 1, "node2_num": 2, "distance": 5 },
+        { "node1_num": 1, "node2_num": 3, "distance": 5 }
+    ]
+}
