@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4902693271693889337}
   - component: {fileID: 6812304362461882001}
   - component: {fileID: 8110175880899826193}
+  - component: {fileID: 2310762227849399714}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -106,6 +107,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2310762227849399714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3683235779335496372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdc9f2a7ed6acaa4d906f5dfe44fb680, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activate: {fileID: 2100000, guid: e8a05dae8146131409f1e0883c6344da, type: 2}
+  deactivate: {fileID: 2100000, guid: 6a896d12e67c4e844a5695a2b1f11a60, type: 2}
 --- !u!1 &7067605290350789944
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,6 +171,9 @@ MonoBehaviour:
   man_max_value: 0
   economy_min_value: 0
   economy_max_value: 0
+  man_value: 0
+  economy_value: 0
+  state: {fileID: 2310762227849399714}
 --- !u!1 &8154225162545665743
 GameObject:
   m_ObjectHideFlags: 0
@@ -190,7 +208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.06}
+  m_AnchoredPosition: {x: 0, y: 1.276}
   m_SizeDelta: {x: 5.3635, y: 1.0672}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &1100855433508149606
@@ -255,7 +273,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: test
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3412dac8278d1a849a5edd8fe58709e0, type: 2}
   m_sharedMaterial: {fileID: -5966785933661034017, guid: 3412dac8278d1a849a5edd8fe58709e0, type: 2}

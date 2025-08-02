@@ -2,57 +2,73 @@
     "nodes": [
         {
             "pos": {
-                "x": 10,
+                "x": 8,
                 "y": 0,
-                "z": 10
+                "z": 8
             },
             "node_name": "병원",
-            "man_min_value": 0.0,
-            "man_max_value": 100.0,
-            "economy_min_value": 0.0,
-            "economy_max_value": 100.0
+            "man_min_value": 9,
+            "man_max_value": 11,
+            "economy_min_value": 5,
+            "economy_max_value": 7
         },
         {
             "pos": {
-                "x": -10,
+                "x": -8,
                 "y": 0,
-                "z": -10
+                "z": -8
             },
             "node_name": "경찰서",
-            "man_min_value": 0.0,
-            "man_max_value": 100.0,
-            "economy_min_value": 0.0,
-            "economy_max_value": 100.0
+            "man_min_value": 4,
+            "man_max_value": 6,
+            "economy_min_value": 3,
+            "economy_max_value": 5
         },
         {
             "pos": {
-                "x": 10,
+                "x": 8,
                 "y": 0,
-                "z": -10
+                "z": -8
             },
             "node_name": "소방서",
-            "man_min_value": 0.0,
-            "man_max_value": 100.0,
-            "economy_min_value": 0.0,
-            "economy_max_value": 100.0
+            "man_min_value": 7,
+            "man_max_value": 9,
+            "economy_min_value": 4,
+            "economy_max_value": 6
         },
         {
             "pos": {
-                "x": -10,
+                "x": -8,
                 "y": 0,
-                "z": 10
+                "z": 8
             },
-            "node_name": "우체국",
+            "node_name": "통신국사",
+            "man_min_value": 2,
+            "man_max_value": 4,
+            "economy_min_value": 8,
+            "economy_max_value": 10
+        },
+        {
+            "pos": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "node_name": "ESS_point",
             "man_min_value": 0.0,
-            "man_max_value": 100.0,
+            "man_max_value": 0.0,
             "economy_min_value": 0.0,
-            "economy_max_value": 100.0
+            "economy_max_value": 0.0
         }
     ],
     "edges": [
         { "node1_num": 0, "node2_num": 3, "distance": 5 },
         { "node1_num": 0, "node2_num": 2, "distance": 5 },
         { "node1_num": 1, "node2_num": 2, "distance": 5 },
-        { "node1_num": 1, "node2_num": 3, "distance": 5 }
+        { "node1_num": 1, "node2_num": 3, "distance": 5 },
+        { "node1_num": 0, "node2_num": 4, "distance": 5 },
+        { "node1_num": 1, "node2_num": 4, "distance": 5 },
+        { "node1_num": 2, "node2_num": 4, "distance": 5 },
+        { "node1_num": 3, "node2_num": 4, "distance": 5 }
     ]
 }

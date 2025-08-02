@@ -15,11 +15,27 @@ public class node : MonoBehaviour
     public float economy_min_value;
     public float economy_max_value;
 
-    private float man_value;
-    private float economy_value;
+    public float man_value;
+    public float economy_value;
 
-    public float Man_value { get => man_value; }
-    public float Economy_value { get => economy_value;}
+    public node_state state;
+
+    public bool is_activate;
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (is_activate)
+        {
+            state.setActivate();
+        }
+        else
+        {
+            state.setDeactivate();
+        }
+    }
+
 
     void Start()
     {
@@ -36,11 +52,24 @@ public class node : MonoBehaviour
         Transform text = sphere.GetChild(0);
 
         text.gameObject.GetComponent<TMP_Text>().text = node_name;
+
+        state.setActivate();
+    }
+    public void Deactivate()
+    {
+
+        is_activate = false;
+        state.setDeactivate();
+    }
+    public void Activate()
+    {
+        is_activate = true;
+
+        state.setActivate();
+
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+  
 }

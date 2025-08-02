@@ -14,8 +14,6 @@ public class graphSet_to_file : MonoBehaviour, graph_set_sorce
     {
         TextAsset JSONFile = Resources.Load<TextAsset>(json_path);
         GraphSet temp = JsonConvert.DeserializeObject<GraphSet>(JSONFile.text);
-
-        Debug.Log(temp.nodes[0].node_name);
         return temp;
     }
 }
